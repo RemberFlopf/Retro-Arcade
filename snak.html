@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snake</title>
+
+</head>
+
+<body>
+
+    <h1>Snake</h1>
+    
+    <canvas id = 'canvas' style = 'height: 480px; width: 1200px;'></canvas>
+
+    <button onclick="multiplayer(0)" class ="player">SINGLEPLAYER</button>
+    <button onclick="multiplayer(1)" class="player" id = 'multi'>MULTIPLAYER</button>
+
+    <button onclick="numberOfPeople(2)" id = "m" class = "difficulty">TWO</button>
+    <button onclick="numberOfPeople(3)" id = "h" class = "difficulty">THREE</button>
+    <button onclick="numberOfPeople(4)" id = "i" class = "difficulty">FOUR</button>
+
+    <p id = "difficulty">How many players?</p>
+
+    <p class = "controls" id = 'title'><b>Controls: </b></p>
+    <p class = 'controls' id = 'player1'><b>1st player</b> : Arrow keys, Control (Teleport) and Shift (Attack)</p>
+    <p class = 'controls' id = 'player2'><b>2nd player</b> : WASD, Q (Teleport) and E (Attack)</p>
+    <p class = 'controls' id = 'player3' ><b>3rd player</b> : IJKL, U (Teleport) and O (Attack)</p>
+    <p class = 'controls' id = 'player4'><b>4th player</b> : TFGH, R (Teleport) and Y (Attack)</p>
+
+    <script src = 'snake.js'></script>
+
+    <style>
+
+        canvas{
+            border: 3px solid lightskyblue;
+            box-shadow: 3%;
+            margin: auto;
+            display: none;
+            background-color: black;
+        }
+
+        .difficulty{
+            display: none;
+        }
+
+        p, button{
+            position: absolute;
+            font-size: 3em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .controls{
+            font-size: 1em;
+            top: 75%;
+            left: 39%;
+            display: none;
+        }
+
+        #title{
+            top: 60%;
+            left: 45%;
+            font-size: 2em;
+        }
+
+        #player2{
+            top: 80%;
+        }
+
+        #player3{
+            top:85%;
+        }
+
+        #player4{
+            top: 90%;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 1%;
+            margin-top: 0%;
+        }
+
+        #difficulty{
+            top: 10%;
+            left: 35%;
+        }
+
+        .player{
+            left : 18%;
+            display: unset;
+            background-color: aqua;
+            position: absolute;
+            font-size: 3em;
+        }
+
+        #m{
+            left: 26%;
+            background-color: yellow;
+            font-weight: 400;
+            font-style: oblique 15deg;
+            border-radius: 7%;
+        }
+
+        #h{
+            left: 43%;
+            background-color: orange;
+            font-weight: 500;
+            font-style: oblique 12deg;
+            border-radius: 4%;
+        }
+
+        #i{
+            left: 65%;
+            font-weight: 700;
+            font-style: oblique 10deg;
+            background-color: red;
+            border-radius: 0%;
+        }
+
+        #multi{
+            left: 53%;
+            background-color: lightskyblue;
+        }
+
+        button{
+            top: 40%;
+            color: black;
+            border-radius: 10%;
+            padding: 1% 2% 1% 1.5%;
+            font-weight: 200;
+            font-style: oblique 17deg;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+    </style>
+
+</body>
+
+</html>

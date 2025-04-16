@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script src = "pong.js"></script>
+
+</head>
+
+<body>
+
+    <h1>Pong</h1>
+
+
+    <p id = "pPoints" class = "points">0</p>
+
+    <p id = "ePoints" class = "points">0</p>
+
+    <canvas style = "height: 480px; width: 1200px;" id = "Pong"></canvas>
+
+    <button onclick="multiplayer(0)" class ="player">SINGLEPLAYER</button>
+    <button onclick="multiplayer(1)" class="player" id = 'multi'>MULTIPLAYER</button>
+
+    <button onclick="gameStart(1)" id = "e" class = "difficulty">EASY</button>
+    <button onclick="gameStart(2)" id = "m" class = "difficulty">MEDIUM</button>
+    <button onclick="gameStart(3)" id = "h" class = "difficulty">HARD</button>
+    <button onclick="gameStart(4)" id = "i" class = "difficulty">IMPOSSIBLE</button>
+
+    <p id = "difficulty"></p>
+
+    <p class = "winlose" id = "win">You won!</p>
+    <p class = "winlose" id = "lose">You lost.</p>
+
+    <style>
+
+        canvas{
+            border: 3px solid lightskyblue;
+            box-shadow: 3%;
+            margin: auto;
+            display: none;
+        }
+
+        #difficulty{
+            top: 10%;
+            left: 36%;
+        }
+
+        .winlose{
+            left: 43%;
+            display: none;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 4vw;
+            margin-top: 0%;
+            margin-bottom: 1%;
+        }
+
+        p, button{
+            position: absolute;
+            font-size: 3em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .points{
+            display: none;
+            margin-left: 40%;
+        }
+
+        #ePoints{
+            margin-left: 56%;
+        }
+
+        button{
+            display: none;
+            top: 40%;
+            left: 14%;
+            background-color: greenyellow;
+            color: black;
+            border-radius: 10%;
+            padding: 1% 2% 1% 1.5%;
+            font-weight: 200;
+            font-style: oblique 17deg;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+
+        #m{
+            left: 29%;
+            background-color: yellow;
+            font-weight: 400;
+            font-style: oblique 15deg;
+            border-radius: 7%;
+        }
+
+        #h{
+            left: 49%;
+            background-color: orange;
+            font-weight: 500;
+            font-style: oblique 12deg;
+            border-radius: 4%;
+        }
+
+        #i{
+            left: 65%;
+            font-weight: 700;
+            font-style: oblique 10deg;
+            background-color: red;
+            border-radius: 0%;
+        }
+
+        
+        .player{
+            left : 18%;
+            display: unset;
+            background-color: aqua;
+        }
+
+        #multi{
+            left: 53%;
+            background-color: lightskyblue;
+        }
+
+    </style>
+
+</body>
+
+
+</html>
