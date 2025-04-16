@@ -99,6 +99,14 @@ class Game{
                 for (let s of snakes){
 
                     s.eaten = 1;
+
+                    while (s.segments.length >= 2){
+
+                        s.segments.pop()
+                        s.segments.pop()
+
+                    }
+
                     powerup.active = false;
 
                     if(s.colour != 'white'){
