@@ -535,11 +535,17 @@ class Ball extends GameObject{
         this.x += this.vx;
         this.y += this.vy;
 
-        for (this.i = 0; this.i < this.multiplier -1 ; this.i ++){
+        for (this.i = 0; this.i < this.multiplier; this.i ++){
 
             this.ctx.globalAlpha = 0.5;
             this.ctx.fillStyle = this.colour;
             this.ctx.beginPath();
+
+            while(this.trail.length <= this.i){
+
+                this.trail.unshift({x : this.x, y : this.y})
+
+            }
 
             this.ctx.arc(this.trail[this.i].x, this.trail[this.i].y, this.radius, 0, 2 * Math.PI)
 
