@@ -9,10 +9,146 @@
 
     <h1>Retro Arcade</h1>
 
-    <a href ="pomg.html">Pong</a>
-    <a href ="snak.html">Snake</a>
-    <a href = "breakout.html">Breakout</a>
-    <a href = "tetris/tetris.html">Tetris</a>
+    <div class = 'container'>
+
+        <div id = 'pong' class = 'card'>
+
+            <a href ="pomg.html">Pong<br>
+    
+            <img src = 'assets/pong gameplay.png' width="200px">
+    
+        </a>
+    
+            <p>Play the classic Atari Pong game in singleplayer or multiplayer! Compete against 4 different difficulty levels or a friend to see who can win 7 games first.</p>
+    
+        </div>
+    
+        <div id = 'snake' class = 'card'>
+    
+            <a href ="snak.html">Snake<br>
+    
+            <img src = 'assets/snake gameplay.png' width="180px">
+    
+        </a>
+    
+            <p>Play the classic Snake game with a twist. Collect different power-ups for powerful abilities and destroy foes in 4-player multiplayer. Use teleports, traps and attacks to outwit your opponents and be the last one standing.</p>
+    
+        </div>
+    
+        <div id = 'breakout' class ='card'>
+    
+            <a href ="breakout.html">Breakout<br>
+    
+            <img src = 'assets/breakout gameplay.png' width="200px">
+    
+        </a>
+    
+            <p>Play the classic Atari Breakout game where you break bricks to earn points. Earn score multipliers, fight endless waves of oncoming bricks and collect extra balls from bonuses to survive as long as possible!</p>
+    
+        </div>
+    
+        <div id = 'tetris' class = 'card'>
+    
+            <a href ="tetris/tetris.html">Tetris<br>
+    
+            <img src = 'assets/tetris gameplay.png' width="200px">
+    
+        </a>
+    
+            <p>Play classic Tetris and try to achieve the highest score possible. Develop strategies in order to maximise score gain are just play a game for fun. Highscore is saved between games. </p>
+    
+        </div>
+
+    </div>
+
+    <style>
+
+        h1, a, p{
+            text-shadow: #b5a81d 0 0 10px;
+            text-align: center;
+            font-size: 3em;
+
+        }
+
+        .card a:hover{
+
+            padding-top: 0%;
+            padding-bottom: 6%;
+
+        }
+
+
+        .card{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            background-color: #0d1b2a;
+            margin-left: 3%;
+            border: 1px#f0e130 solid;
+            padding: 30px;
+            max-width: 400px;
+            max-height: max-content;
+        }
+
+        .container{
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            gap: 40px;
+
+
+        }
+
+        .card img{
+
+            border: 2px gray double;
+            margin-top: 30px;
+        }
+
+        .card a{
+
+            
+            text-decoration: none;
+
+            border-bottom: 1px gray double;
+
+            padding-left: 100px;
+            padding-right: 100px;
+
+            color: #f0e130;
+            text-shadow: #b5a81d 0 0 10px;
+
+            padding-top: 3%;
+            padding-bottom: 3%;
+
+            transition: 
+                padding-top 2s,
+                padding-bottom 2s;
+        }
+
+        .card p{
+
+            font-size: 15px;
+            text-align: left;
+
+            text-shadow: #b5a81d 0 0 10px;
+
+        }
+
+        body{
+
+            background-image: url('./assets/Blue\ and\ White\ Retro\ Gaming\ Arcade\ Event\ Poster.png');
+            background-color: #123d87;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #f0e130;
+
+        }
+
+    </style>
     
 </body>
 </html>

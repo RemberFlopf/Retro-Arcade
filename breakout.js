@@ -1,4 +1,4 @@
-let highscore = parseInt(localStorage.getItem("highscore")) || 0;
+let highscore = parseInt(localStorage.getItem("breakout_highscore")) || 0;
 
 class Game{
 
@@ -91,7 +91,7 @@ class Game{
 
                     if (highscore < this.score){
                         highscore = this.score;
-                        localStorage.setItem('highscore', highscore)
+                        localStorage.setItem('breakout_highscore', highscore)
                     }
 
                     this.player.reset()
